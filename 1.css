@@ -1,0 +1,245 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+ 
+
+/* Header */
+header {
+    background-color: #333;
+    color: rgb(193, 230, 235);
+    padding: 10px 0;
+    font-weight: 300;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex; /* Display links in a row */
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(49, 36, 36);
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 10px 0; /* Adds spacing around the link text */
+  }
+  
+  /* Highlight the link on hover */
+  nav ul li a:hover {
+    color: #ffc107;
+    border-bottom: 2px solid #ffc107;
+  }
+  
+  
+  /* Sections */
+  .section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4e3e3; /* Set a white background for sections */
+  }
+  
+  #home {
+   
+    color: linear-gradient(90deg, #ceddea, #9b5ad5);
+  }
+  
+  #home .container {
+    background: #e8eced;
+    text-align: center;
+  }
+  
+  #home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #home p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  /* Apply animation to sections */
+  .section.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  /* Apply different animations to different sections */
+  #home.animated {
+    animation-name: fadeInUp;
+  }
+
+  #about {
+    background-color: #f4e3e3;
+    padding: 100px 0;
+  }
+  
+  #about .container {
+    background: #e8eced;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  #about.animated {
+    animation-name: fadeInUp;
+  }
+  
+  #projects.animated {
+    animation-name: fadeInUp;
+  }
+  
+  #contact.animated {
+    animation-name: fadeInUp;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* ... (previous styles) ... */
+
+/* Projects Section */
+#projects {
+    background-color: #f4e3e3;
+    padding: 100px 0;
+  }
+  
+  #projects .container {
+    background-color: #e8eced;
+    text-align: center;
+  }
+  
+  #projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .project:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 1.1rem;
+  }
+  
+  /* Contact Section */
+#contact {
+    background-color: #f4e3e3;
+    color: rgb(34, 31, 31);
+    padding: 100px 0;
+  }
+  
+  #contact .container {
+    background: #e8eced;
+   
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: black;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s;
+  }
+  
+  #contact-form input::placeholder,
+  #contact-form textarea::placeholder {
+    color: #666;
+  }
+  
+  #contact-form input:hover,
+  #contact-form textarea:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  #contact-form textarea {
+    resize: vertical;
+  }
+  
+  #contact-form button {
+    background-color: #f2b015;
+    color: rgb(23, 22, 22);
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #contact-form button:hover {
+    background-color: #444;
+  }
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: rgb(197, 205, 211);
+    text-align: center;
+    padding: 10px 0;
+  }
+  

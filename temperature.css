@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+
+}
+
+.container{
+    max-width: 500px;
+    background: #8fcae3;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 5px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 12px;
+
+}
+
+.Temperature-icon{
+    font-size: 50px;
+    color: aquamarine;
+}
+
+
+.h1{
+    color:aquamarine ;
+    letter-spacing: 1.5px;
+}
